@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reindeer的个人主页</title>
+    <!-- 引入字体 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 引入图标库 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="nav-logo">Reindeer</div>
+      <div class="nav-links">
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#portfolio">作品集</a>
+        <a href="#ai-assistant">AI助手</a>
+      </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>你好，我是 <span class="highlight">Reindeer</span></h1>
+        <p class="hero-subtitle">AI开发者 / 设计师 / 创作者</p>
+        <p class="hero-description">
+          我是一名AI开发者，专注于AI在设计领域的应用。
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="imagecopy.png" alt="Reindeer" />
+      </div>
+    </section>
+
+    <!-- AI助手按钮 -->
+    <button id="ai-floating-btn" class="ai-floating-btn">
+      <div class="ai-btn-inner">
+        <i class="fas fa-robot"></i>
+        <span class="ai-btn-text">AI助手</span>
+      </div>
+      <div class="ai-btn-glow"></div>
+    </button>
+
+    <!-- AI对话侧边栏 -->
+    <div id="ai-chat-sidebar" class="ai-chat-sidebar">
+      <div class="chat-header">
+        <h3>AI智能助手</h3>
+        <button class="close-chat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="chat-container">
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="输入您的问题..." />
+          <button id="send-message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 作品展示 -->
+    <section id="portfolio" class="portfolio">
+      <h2>作品展示</h2>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slide1.jpg" alt="作品展示1" />
+          </div>
+          <div class="carousel-item">
+            <img src="slide2.jpg" alt="作品展示2" />
+          </div>
+          <div class="carousel-item">
+            <img src="slide3.jpg" alt="作品展示3" />
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+      <h2>关于我</h2>
+      <p>这里是你的详细介绍，可以包含你的经历、理念等。</p>
+      <div class="skills">
+        <div class="skill-tag">HTML5</div>
+        <div class="skill-tag">CSS3</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">UI设计</div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#" target="_blank" aria-label="Github"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="Email"
+            ><i class="far fa-envelope"></i
+          ></a>
+        </div>
+        <p class="copyright">© 2024 Reindeer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
